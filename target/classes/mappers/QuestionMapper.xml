@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.makcent.dao.QuestionMapper" >
+  <resultMap id="BaseResultMap" type="com.makcent.pojo.Question" >
+    <constructor >
+      <idArg column="question_id" jdbcType="BIGINT" javaType="java.lang.Long" />
+      <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="question" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="tag" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="created_at" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="updated_at" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="status" jdbcType="TINYINT" javaType="java.lang.Byte" />
+      <arg column="member_id" jdbcType="BIGINT" javaType="java.lang.Long" />
+      <arg column="category_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="column_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    question_id, title, question, tag, created_at, updated_at, status, member_id, category_id, 
+    column_id
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from question
+    where question_id = #{questionId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from question
+    where question_id = #{questionId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.makcent.pojo.Question" >
+    insert into question (question_id, title, question, 
+      tag, created_at, updated_at, 
+      status, member_id, category_id, 
+      column_id)
+    values (#{questionId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{question,jdbcType=VARCHAR}, 
+      #{tag,jdbcType=VARCHAR}, now(), now(),
+      #{status,jdbcType=TINYINT}, #{memberId,jdbcType=BIGINT}, #{categoryId,jdbcType=INTEGER}, 
+      #{columnId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.makcent.pojo.Question" >
+    insert into question
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="questionId != null" >
+        question_id,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="question != null" >
+        question,
+      </if>
+      <if test="tag != null" >
+        tag,
+      </if>
+      <if test="createdAt != null" >
+        created_at,
+      </if>
+      <if test="updatedAt != null" >
+        updated_at,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="memberId != null" >
+        member_id,
+      </if>
+      <if test="categoryId != null" >
+        category_id,
+      </if>
+      <if test="columnId != null" >
+        column_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="questionId != null" >
+        #{questionId,jdbcType=BIGINT},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="question != null" >
+        #{question,jdbcType=VARCHAR},
+      </if>
+      <if test="tag != null" >
+        #{tag,jdbcType=VARCHAR},
+      </if>
+      <if test="createdAt != null" >
+        now(),
+      </if>
+      <if test="updatedAt != null" >
+        now(),
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="memberId != null" >
+        #{memberId,jdbcType=BIGINT},
+      </if>
+      <if test="categoryId != null" >
+        #{categoryId,jdbcType=INTEGER},
+      </if>
+      <if test="columnId != null" >
+        #{columnId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.makcent.pojo.Question" >
+    update question
+    <set >
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="question != null" >
+        question = #{question,jdbcType=VARCHAR},
+      </if>
+      <if test="tag != null" >
+        tag = #{tag,jdbcType=VARCHAR},
+      </if>
+      <if test="createdAt != null" >
+        created_at = #{createdAt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedAt != null" >
+        updated_at = now(),
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="memberId != null" >
+        member_id = #{memberId,jdbcType=BIGINT},
+      </if>
+      <if test="categoryId != null" >
+        category_id = #{categoryId,jdbcType=INTEGER},
+      </if>
+      <if test="columnId != null" >
+        column_id = #{columnId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where question_id = #{questionId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.makcent.pojo.Question" >
+    update question
+    set title = #{title,jdbcType=VARCHAR},
+      question = #{question,jdbcType=VARCHAR},
+      tag = #{tag,jdbcType=VARCHAR},
+      created_at = #{createdAt,jdbcType=TIMESTAMP},
+      updated_at = now(),
+      status = #{status,jdbcType=TINYINT},
+      member_id = #{memberId,jdbcType=BIGINT},
+      category_id = #{categoryId,jdbcType=INTEGER},
+      column_id = #{columnId,jdbcType=INTEGER}
+    where question_id = #{questionId,jdbcType=BIGINT}
+  </update>
+</mapper>

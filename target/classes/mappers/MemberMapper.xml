@@ -211,4 +211,17 @@
       auth_key = #{authKey,jdbcType=VARCHAR}
     where member_id = #{memberId,jdbcType=BIGINT}
   </update>
+
+  <select id="checkMemberUsername" resultType="int" parameterType="string">
+    select count(1) from member
+    where username = #{username}
+  </select>
+
+  <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
+    select
+    <include refid="Base_Column_List" />
+    from member
+    where username = #{username}
+    and password = #{password}
+  </select>
 </mapper>

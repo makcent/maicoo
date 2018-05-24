@@ -22,7 +22,15 @@ public interface MemberMapper {
 
     Member selectLogin(@Param("username") String username, @Param("password") String password);
 
+    String selectQuestionByUsername(String username);
 
+    int checkAnswe(@Param("username")String username, @Param("question")String question, @Param("answer")String answer);
+
+    int updatePasswordByUsername(@Param("username")String username, @Param("password")String password);
+
+    int checkPassword(@Param("password")String password, @Param("memberId")Long memberId);
+
+    int checkEmailByMemberId(@Param("email")String email, @Param("memberId")Long memberId);
 }
 
 

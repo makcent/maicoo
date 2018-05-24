@@ -229,4 +229,41 @@
     select count(1) from member
     where email = #{email}
   </select>
+
+  <select id="selectQuestionByUsername" resultType="string" parameterType="string">
+    select question
+    from member
+    where username = #{username}
+  </select>
+
+  <select id="checkAnswe" resultType="int" parameterType="map">
+    select
+    count(1)
+    from member
+    where username = #{username}
+    and question = #{question}
+    and answer = #{answer}
+  </select>
+
+  <update id="updatePasswordByUsername" parameterType="map">
+    update member
+    set password = #{password},updated_at = now()
+    where username = #{username}
+  </update>
+  
+  <select id="checkPassword" resultType="int" parameterType="map">
+    select
+    count(1)
+    from member
+    where member_id = #{memberId}
+    and password = #{password}
+  </select>
+
+  <select id="checkEmailByMemberId" resultType="int" parameterType="map">
+     select
+    count(1)
+    from member
+    where email = #{email}
+    and id != #{memberId}
+  </select>
 </mapper>

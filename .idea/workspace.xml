@@ -431,12 +431,12 @@
       <updated>1527093349256</updated>
       <workItem from="1527093350544" duration="49000" />
       <workItem from="1527093417906" duration="62000" />
-      <workItem from="1527093498718" duration="19440000" />
+      <workItem from="1527093498718" duration="19724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19551000" />
+    <option name="totallyTimeSpent" value="19835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,11 +466,11 @@
       <window_info anchor="bottom" id="Messages" weight="0.5050392" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32921812" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3281075" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32921812" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="1.0" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32921812" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3281075" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.6528555" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.24946696" />
       <window_info anchor="bottom" id="Problems" weight="0.33706608" />

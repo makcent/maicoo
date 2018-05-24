@@ -6,31 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bb69a86-c16d-4785-bf2c-caefacd6a866" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/makcent/common/TokenCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/makcent/controller/backend/MemberManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/common/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/common/ResponseCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/common/ServerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/common/ServerResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/controller/portal/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/controller/portal/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/dao/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/dao/MemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/service/IMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/service/IMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/makcent/util/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/makcent/util/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/common/Const.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/common/Const.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/common/ResponseCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/common/ResponseCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/common/ServerResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/common/ServerResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/controller/portal/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/controller/portal/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/dao/MemberMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/dao/MemberMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/service/IMemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/service/IMemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/makcent/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/makcent/service/impl/MemberServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mappers/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mappers/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/makcent.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/makcent.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/makcent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/makcent/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8bb69a86-c16d-4785-bf2c-caefacd6a866" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,20 +59,7 @@
     <favorites_list name="makcent" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MemberManageController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makcent/controller/backend/MemberManageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -468,12 +431,12 @@
       <updated>1527093349256</updated>
       <workItem from="1527093350544" duration="49000" />
       <workItem from="1527093417906" duration="62000" />
-      <workItem from="1527093498718" duration="18880000" />
+      <workItem from="1527093498718" duration="19440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18991000" />
+    <option name="totallyTimeSpent" value="19551000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
